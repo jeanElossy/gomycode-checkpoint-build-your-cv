@@ -1,0 +1,202 @@
+.header {
+    background: url('../data/8.jpg') center / cover;
+    // filter: blur(1px);
+    padding: 10px;
+    position: relative;
+    height: 420px;
+    
+    .row {
+        width: 100% !important;
+        
+        .overlay {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: rgba(22, 22, 22, 0.753);
+            z-index: 1;
+        }
+        .photo {
+            z-index: 10;
+            img {
+                object-fit: cover;
+                
+            }
+        }
+        .text {
+            z-index: 10;
+            h1, h2 {
+                font-size: 6.5rem;
+                color: $colorWhite;
+            }
+            h2{
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 450px;
+        .row{
+
+            .photo {
+
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            .text {
+
+                h1 {
+                    font-size: 3rem;
+                }
+                h2{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+    .header {
+        height: 300px;
+        .row{
+            justify-content: center !important;
+            align-items: center !important;
+            .photo {
+
+                img{
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+            .text {
+                padding-left: 2rem !important;
+                h1 {
+                    font-size: 4rem;
+                }
+                h2{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1230px) {
+    .header {
+        height: 330px;
+        .row{
+            justify-content: center !important;
+            align-items: center !important;
+            .photo {
+
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            .text {
+
+                h1 {
+                    font-size: 5rem;
+                }
+                h2{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .header {
+        height: 450px;
+        .row{
+            justify-content: center !important;
+            align-items: center !important;
+            .photo {
+
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+            .text {
+
+                h1 {
+                    font-size: 3rem;
+                }
+                h2{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 325px) {
+    .header {
+        height: 400px;
+        .row{
+            justify-content: center !important;
+            align-items: center !important;
+            .photo {
+
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+            .text {
+
+                h1 {
+                    font-size: 3rem;
+                }
+                h2{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .header {
+        height: 300px;
+        
+        .row{
+            justify-content: center !important;
+            align-items: center !important;
+            .photo {
+
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .text {
+
+                h1 {
+                    font-size: 2rem;
+                }
+                h2{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

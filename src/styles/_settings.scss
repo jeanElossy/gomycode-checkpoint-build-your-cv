@@ -1,0 +1,34 @@
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$colorWhite: white;
+$colorBlack: #333;
+
+a {
+    text-decoration: none;
+    color: $colorBlack;
+}
+
+body {
+    overflow-y: auto;
+    // font-family: 'montserrat';
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+    height: 100%;
+    background: white;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(49, 49, 49);
+    border-radius: 5px;
+
+}
+

@@ -1,0 +1,112 @@
+.blockRight {
+    
+    background: rgba(224, 222, 222, 0.123);
+
+    .competences {
+        padding: 2rem 1rem .5rem !important;
+        
+        .performance {
+            
+            span{
+                
+                &:nth-child(2), 
+                &:nth-child(3){
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 2px;
+                        height: 500px;
+                        background: rgba(194, 192, 192, 0.164);
+                        top: 30px;
+                        left: 8px;
+                    }
+                    
+                }
+            }
+        }
+        .progressBulle {
+            padding: 0 2rem !important;
+
+            h1 {
+                color: rgb(37, 37, 41);
+            }
+        
+
+            .progress {
+                height: .4rem;
+                background: transparent;
+                border-radius: 50px;
+                margin-top: 0.2rem;
+                position: relative;
+    
+                &:after {
+                content: '';
+                position: absolute;
+                background: burlywood;
+                border-radius: 50px;
+                height: .4rem;
+                width: 0;
+                animation: line 2s ease-out forwards;
+    
+                @keyframes line {
+                    to {
+                    width: 100%;
+                    }
+                }
+                }
+            }
+        }
+        
+    }
+    .experiences {
+        padding: 0 1rem 1rem !important;
+
+        .part__one {
+
+           
+            .part__one--content {
+                font-size: 1.3rem !important;
+                .periode {
+                    font-weight: 480;
+                }
+                .link-one, .link-two {
+                    padding: 0 2rem !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 572px) {
+    
+    .blockRight {
+    
+    .competences {
+            
+        .progressBulle {
+                padding: 0 !important;
+                
+            }
+        }
+    }
+    
+}
+/*
+@media screen and (max-width: 1250px) {
+    .blockRight {
+
+        .competences {
+            // padding: 0 9rem 0 0 !important;
+            .progressBulle {
+
+            }
+        }
+
+        .experiences {
+            // padding: 0 9rem 0 0 !important;
+        }
+    }
+}
+
+*/

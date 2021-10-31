@@ -1,0 +1,19 @@
+.container-fluid {
+
+    .row, * {
+        padding: 0 !important;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .container-fluid {
+
+        .row{
+            
+            padding: 4px !important;
+            
+        }
+    }
+}
