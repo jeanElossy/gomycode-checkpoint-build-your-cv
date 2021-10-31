@@ -23,5 +23,3 @@ export default Profil
 
 
 
-git remote add origin https://github.com/jeanElossy/gomycode-checkpoint-build-your-cv.git
-

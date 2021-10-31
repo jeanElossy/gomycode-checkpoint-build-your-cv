@@ -1,19 +1,9 @@
 import React from 'react';
-// import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
 
 
 const Contact = ( { className }) => {
-
-
-
-    // <CopyToClipboard text="0749490835">
-//                             <span className="clickInput" onClick={() => {
-//                                     alert("Numero de telephone copie !");
-//                                 }}>
-//                                     07 494 908 35
-//                             </span>
-//                         </CopyToClipboard>
-
 
     return (
         
@@ -21,17 +11,18 @@ const Contact = ( { className }) => {
 
                 <h1 className="text-center text-xl-start mt-5"> CONTACTS</h1>
 
-                <div>
-                    <div>
+                <div className="d-flex flex-column gap-3">
+                    <div className="d-flex align-items-center gap-3">
                         <i className="fas fa-map-marker-alt"></i>
                         <div>Abidjan / Cote D'Ivoire</div>
                     </div>
 
-                    <div>
+                    <div className="d-flex align-items-center gap-3">
                         <i className="far fa-envelope"></i>
+
                         <div>
                             <a 
-                                href="mailto"
+                                href="mailto:jean.elossy@gmail.com"
                                 title="M'envoyé un mail"
                             >
                                 jean.elossy@gmail.com
@@ -39,16 +30,18 @@ const Contact = ( { className }) => {
                         </div>
                     </div>
 
-                    <div>
-                        <span>
-                            <i className="fas fa-mobile-alt"></i>
-                        </span>
-                        <div>
-                            07 494 908 35 
-                        </div>
+                    <div className="d-flex align-items-center gap-3">
+                        <i className="fas fa-mobile-alt"></i>
+                        <CopyToClipboard text="00225 0749490835">
+                            <span className="clickInput" onClick={() => {
+                                alert("Numero de telephone copie !");
+                            }}>
+                                (+225) 07 494 908 35
+                            </span>
+                        </CopyToClipboard>
                     </div>
 
-                    <div>
+                    <div className="d-flex align-items-center gap-3">
                         <i className="fab fa-linkedin"></i>
                         <div>
                             <a 
@@ -63,7 +56,7 @@ const Contact = ( { className }) => {
                         </div>
                     </div>
                     
-                    <div>
+                    <div className='d-flex align-items-center gap-3'>
                         <i className="fab fa-github"></i>
                         <div>
                             <a 
