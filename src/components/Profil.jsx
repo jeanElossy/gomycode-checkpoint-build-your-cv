@@ -9,7 +9,7 @@ const Profil = ({ className }) => {
                 <h1 className="text-center text-xl-start">PROFIL</h1>
                 <p>
                     <li>
-                        Je suis passionné de code et toujours à la récherche de solution adéquate et surtout a l'ecoute des autres.
+                        Je suis passionné de code et toujours à la récherche de solution adéquate et surtout à l'écoute des autres.
                     </li>
                 </p>
                 

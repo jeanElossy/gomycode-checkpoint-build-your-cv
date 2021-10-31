@@ -14,7 +14,7 @@ const Contact = ( { className }) => {
                 <div className="d-flex flex-column gap-3">
                     <div className="d-flex align-items-center gap-3">
                         <i className="fas fa-map-marker-alt"></i>
-                        <div>Abidjan / Cote D'Ivoire</div>
+                        <div>Abidjan / Côte D'Ivoire</div>
                     </div>
 
                     <div className="d-flex align-items-center gap-3">
