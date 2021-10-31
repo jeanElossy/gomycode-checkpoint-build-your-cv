@@ -1,16 +1,23 @@
-import Cv from "./components/Cv";
-
+import Cv from './components/Cv';
+import Load from './components/Load';
+import { useState, useEffect } from 'react';
 
 const App = () => {
-  return (
-    <div className="App">
+	const [
+		loader,
+		setLoader,
+	] = useState(true);
 
-      <Cv /> 
+	useEffect(() => {
+		setTimeout(() => {
+			setLoader(false);
+		}, 1100);
+	}, []);
 
-    </div>
-  );
-}
+	return loader ? <Load /> :
+		<div className='App'>
+			<Cv />
+		</div>;
+};
 
 export default App;
-
-

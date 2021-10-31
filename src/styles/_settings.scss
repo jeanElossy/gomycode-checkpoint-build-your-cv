@@ -17,6 +17,13 @@ a {
 body {
     overflow-y: auto;
     // font-family: 'montserrat';
+    
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 body::-webkit-scrollbar{

@@ -11,7 +11,7 @@ const Formation = ({ className }) => {
                     <li>
                         Certificat Gomycode développeur Fullstack Junior JavaScript (MERN), 2021 {} 
                         <a 
-                            href="/"
+                            href="#"
                             target="_blank"
                             without
                             rel="noreferrer"
