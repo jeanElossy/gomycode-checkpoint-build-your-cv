@@ -75,6 +75,26 @@
                 }
             }
         }
+        .topIcon {
+            bottom: 3.3rem;
+            right: .3rem;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 0 7px 2px rgba(51, 51, 51, 0.479);
+            position: fixed;
+            
+            @include center;
+                a {
+                    
+                    color: blue;
+                
+                .fa-chevron-up{
+                    font-size: 1.5rem;
+                    
+                }
+            }
+        }
     }
 }
 

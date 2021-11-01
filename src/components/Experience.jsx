@@ -3,7 +3,7 @@ import React from 'react'
 const Experience = ({ className }) => {
     return (
         <div className={className}>
-            <h1 className="text-center text-xl-start">EXPERIENCES</h1>
+            <h1 className="text-center text-xl-start">EXPERIENCES PROFESSIONNELLES</h1>
 
             <div className="part__one mt-4">
                 <h2 className="title h4">Réalisation de projet d'étude</h2>
@@ -40,6 +40,11 @@ const Experience = ({ className }) => {
             </div>
             <div className="part__two">
                 <h3 className="h4">Participation à un projet e-commerce (LMC)</h3>
+            </div>
+            <div className="topIcon">
+                <a href="#">
+                    <i class="fas fa-chevron-up"></i>
+                </a>        
             </div>
         </div>
     )
