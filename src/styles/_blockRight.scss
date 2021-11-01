@@ -87,7 +87,7 @@
             @include center;
                 a {
                     
-                    color: blue;
+                    color: rgba(56, 56, 59, 0.685);
                 
                 .fa-chevron-up{
                     font-size: 1.5rem;
@@ -97,6 +97,7 @@
         }
     }
 }
+
 
 @media screen and (max-width: 572px) {
     
